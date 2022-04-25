@@ -1,0 +1,54 @@
+1 - Muitas estruturas algorítmicas tem sua lógica inspirada em coisas do seu cotidiano, como por exemplo o ato de tomar água e depois ter que ir ao banheiro. Baseado nos seus conhecimentos de estruturas algorítmicas 
+e na sua vivência pessoal, descreva uma situação cotidiana que se assemelha a essas respectivas estruturas abaixo:
+
+a - Array
+Capsulas de café: Expresso, Café Caseiro, Caffè Matinal, Chococino, Mochaccino, Cappuccino.
+
+b - Função
+Vou a cafeteria e peço o café de sempre: Um café Expresso com 2 cubos de açúcar e bastante mel!
+
+c - Laço de repetição (for)
+Enchendo uma xícara de café de 240ml com um copo de 40ml por vez até encher a xícara.
+
+d - Laço de repetição (while)
+Colocando 72g de açúcar dentro do café com uma colher de sopa que cabe 12g por vez.
+
+e - Condicionais (if e else)
+Se tem café dentro do bule eu tomo, se não tiver eu faço o café.
+
+2 - Agora, com base nas suas respostas a cima, repita essa mesma situação que você descreveu, porém transformando-as em código JavaScript.
+
+a - Array
+const capsulas = [["Expresso", "Café Caseiro", "Caffè Matinal"], ["Chococino"], ["Mochaccino", "Cappuccino"]];
+
+b - Função
+function DeSempre() {
+    console.log("Um café Expresso" + " 2 cubos de açucar" + " e bastante mel!")
+}
+
+c - Laço de repetição (for)
+function EncherXicara() {
+let xicara = 240
+    for(let i = 0; i <= xicara; i = i + 40){
+        console.log(i + "ml")
+    }
+}
+
+d - Laço de repetição (while)
+function ColocarAcucar() {
+    let colher = 12
+    let café = 0
+    while(café < 72) {
+        café += colher;
+        console.log("Colocando açucar no café " + café + "g")
+    }
+}
+
+e - Condicionais (if e else)
+function TomarCafe(cafe) {
+ if(cafe == true) {
+     console.log("Pego café e tomo")
+ } else {
+     console.log("Vou fazer o café")
+ }   
+}
